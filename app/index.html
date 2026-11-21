@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI · All 55 Trophies</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <h1>Leonida Trophy Guide</h1>
+    <p class="sub">Grand Theft Auto VI · PlayStation 5 · all 55 trophies, cited step by step</p>
+  </div>
+  <div class="meter" id="progress-meter" aria-live="polite"></div>
+</header>
+<nav class="tabs" id="view-tabs" aria-label="Views">
+  <a href="#/tracker" data-view="tracker">Tracker</a>
+  <a href="#/roadmap" data-view="roadmap">Roadmap</a>
+  <a href="#/missables" data-view="missables">Missables</a>
+  <a href="#/sources" data-view="sources">Sources</a>
+</nav>
+<section class="toolbar">
+  <label class="search">Search <input id="search-trophies" type="search" placeholder="trophy, mission, place…" autocomplete="off"></label>
+  <div class="chips" id="filter-chips" role="group" aria-label="Filter by kind"></div>
+  <div class="chips grades" id="grade-chips" role="group" aria-label="Filter by grade"></div>
+  <label class="spoiler"><input type="checkbox" id="spoiler-input" checked> Spoiler shield: hide story trophies until earned</label>
+  <span class="spacer"></span>
+  <button id="export-btn" type="button">Export progress</button>
+  <button id="import-btn" type="button">Import progress</button>
+  <input id="import-file" type="file" accept="application/json,.json" hidden>
+  <span id="save-status" class="saved">Saved in this browser</span>
+</section>
+<main id="view-root">
+  <div class="layout">
+    <section class="list" id="trophy-list" aria-label="Trophy checklist"></section>
+    <aside class="guide" id="open-guide" aria-label="Open guide"></aside>
+  </div>
+  <section class="page" id="page-view" hidden></section>
+</main>
+<footer class="foot">
+  <p id="foot-note">Offline guide: every file it loads lives under app/. Names, descriptions and grades as PlayStation publishes them; guides are written for this app and cite their sources beside each step.</p>
+  <p class="audit" id="audit-strip"></p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
